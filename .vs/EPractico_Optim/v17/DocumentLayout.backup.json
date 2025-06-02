@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\osrod\\source\\repos\\EPractico_Optim\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7630FF0E-DE00-49C2-8BCE-056851EB5B20}|EPractico_Optim.csproj|c:\\users\\osrod\\source\\repos\\epractico_optim\\controllers\\cocktailscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7630FF0E-DE00-49C2-8BCE-056851EB5B20}|EPractico_Optim.csproj|solutionrelative:controllers\\cocktailscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7630FF0E-DE00-49C2-8BCE-056851EB5B20}|EPractico_Optim.csproj|c:\\users\\osrod\\source\\repos\\epractico_optim\\extensions\\cocktailextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7630FF0E-DE00-49C2-8BCE-056851EB5B20}|EPractico_Optim.csproj|solutionrelative:extensions\\cocktailextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7630FF0E-DE00-49C2-8BCE-056851EB5B20}|EPractico_Optim.csproj|c:\\users\\osrod\\source\\repos\\epractico_optim\\services\\cocktailapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7630FF0E-DE00-49C2-8BCE-056851EB5B20}|EPractico_Optim.csproj|solutionrelative:services\\cocktailapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7630FF0E-DE00-49C2-8BCE-056851EB5B20}|EPractico_Optim.csproj|c:\\users\\osrod\\source\\repos\\epractico_optim\\repository\\cocktailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7630FF0E-DE00-49C2-8BCE-056851EB5B20}|EPractico_Optim.csproj|solutionrelative:repository\\cocktailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CocktailExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\osrod\\source\\repos\\EPractico_Optim\\Extensions\\CocktailExtensions.cs",
+              "RelativeDocumentMoniker": "Extensions\\CocktailExtensions.cs",
+              "ToolTip": "C:\\Users\\osrod\\source\\repos\\EPractico_Optim\\Extensions\\CocktailExtensions.cs",
+              "RelativeToolTip": "Extensions\\CocktailExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T21:47:11.141Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CocktailRepository.cs",
+              "DocumentMoniker": "C:\\Users\\osrod\\source\\repos\\EPractico_Optim\\Repository\\CocktailRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\CocktailRepository.cs",
+              "ToolTip": "C:\\Users\\osrod\\source\\repos\\EPractico_Optim\\Repository\\CocktailRepository.cs",
+              "RelativeToolTip": "Repository\\CocktailRepository.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T21:47:00.289Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CocktailApiService.cs",
+              "DocumentMoniker": "C:\\Users\\osrod\\source\\repos\\EPractico_Optim\\Services\\CocktailApiService.cs",
+              "RelativeDocumentMoniker": "Services\\CocktailApiService.cs",
+              "ToolTip": "C:\\Users\\osrod\\source\\repos\\EPractico_Optim\\Services\\CocktailApiService.cs",
+              "RelativeToolTip": "Services\\CocktailApiService.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAwwA0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T21:42:45.313Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CocktailsController.cs",
+              "DocumentMoniker": "C:\\Users\\osrod\\source\\repos\\EPractico_Optim\\Controllers\\CocktailsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CocktailsController.cs",
+              "ToolTip": "C:\\Users\\osrod\\source\\repos\\EPractico_Optim\\Controllers\\CocktailsController.cs",
+              "RelativeToolTip": "Controllers\\CocktailsController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAwwEsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T18:32:07.433Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

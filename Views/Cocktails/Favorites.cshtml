@@ -1,0 +1,32 @@
+﻿@model List<Favorite>
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Mis Cócteles Favoritos</h2>
+
+    @if (Model.Count == 0)
+    {
+        <div class="alert alert-info text-center">
+            No hay favoritos guardados.
+        </div>
+    }
+    else
+    {
+        <div class="row justify-content-center">
+            @foreach (var fav in Model)
+            {
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="@fav.Cocktail.Thumbnail" class="card-img-top" alt="@fav.Cocktail.Name" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title">@fav.Cocktail.Name</h5>
+                            <a href="@Url.Action("Details", new { id = fav.CocktailId })" class="btn btn-outline-primary mb-2">Ver Detalles</a>
+                            <form asp-action="RemoveFavorite" asp-route-id="@fav.CocktailId" method="post">
+                                <button class="btn btn-sm btn-danger">Quitar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>

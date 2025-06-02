@@ -1,0 +1,93 @@
+﻿@model List<Cocktail>
+@{
+    ViewData["Title"] = "Buscar Cócteles";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h2 class="card-title text-center mb-4">Buscar Cócteles</h2>
+                    <form id="searchForm"
+                          method="post"
+                          action="@Url.Action("SearchByName", "Cocktails")"
+                          class="d-flex flex-column gap-3">
+                        <div class="form-floating">
+                            <input type="text"
+                                   id="searchInput"
+                                   name="name"
+                                   class="form-control"
+                                   placeholder="Nombre o Ingrediente" />
+                            <label for="searchInput">Nombre o Ingrediente</label>
+                        </div>
+                        <div class="form-floating">
+                            <select id="typeSelect"
+                                    class="form-select"
+                                    onchange="updateForm()">
+                                <option value="name">Nombre</option>
+                                <option value="ingredient">Ingrediente</option>
+                            </select>
+                            <label for="typeSelect">Buscar por</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">
+                            <i class="bi bi-search me-2"></i>Buscar
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Resultados -->
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        @if (Model == null || !Model.Any())
+        {
+            <div class="col-md-6">
+                <div class="alert alert-info text-center shadow-sm">
+                    No se encontraron cócteles que coincidan con tu búsqueda.
+                </div>
+            </div>
+        }
+        else
+        {
+            @foreach (var c in Model)
+            {
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4 d-flex align-items-stretch">
+                    <div class="card shadow-sm w-100">
+                        <img src="@c.Thumbnail" class="card-img-top" alt="@c.Name" />
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-center mb-3">@c.Name</h5>
+                            <a asp-action="Details"
+                               asp-route-id="@c.Id"
+                               class="btn btn-outline-primary mt-auto">
+                                Ver Detalles
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</div>
+
+<script>
+    function updateForm() {
+        const form = document.getElementById('searchForm');
+        const type = document.getElementById('typeSelect').value;
+        const input = document.getElementById('searchInput');
+
+        if (type === 'ingredient') {
+            form.action = '@Url.Action("SearchByIngredient", "Cocktails")';
+            input.name = 'ingredient';
+        } else {
+            form.action = '@Url.Action("SearchByName", "Cocktails")';
+            input.name = 'name';
+        }
+    }
+
+    // Inicializa la acción y el name correcto al cargar la página
+    document.addEventListener('DOMContentLoaded', updateForm);
+</script>
